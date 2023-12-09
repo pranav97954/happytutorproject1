@@ -4,8 +4,14 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Login from './Login'
 import Home from './Home'
 import Upload from './Upload'
-import VideoUpload from './VideoUpload'
-import VideoView from './VideoView'
+
+import ScienceVideoView from './view/ScienceVideoView'
+import MathVideoView from './view/MathVideoView'
+import EnglishVideoView from './view/EnglishVideoView'
+
+import EnglishVideoUpload from './upload/EnglishVideoUpload'
+import ScienceVideoUpload from './upload/ScienceVideoUpload'
+import MathVideoUpload from './upload/MathVideoUpload'
 
 
 function App() {
@@ -15,10 +21,17 @@ function App() {
          <Routes>
           <Route path='/register' element={<Signup />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/upload' element={<Upload />} />
-          <Route path='/videoupload' element={<VideoUpload />} />
-          <Route path='/videoview' element={<VideoView />} />
+
+          <Route path='/mathvideoupload' element={<MathVideoUpload />} />
+          <Route path='/englishvideoupload' element={<EnglishVideoUpload />} />
+          <Route path='/sciencevideoupload' element={<ScienceVideoUpload />} />
+
+          <Route path='/sciencevideoview' element={<ScienceVideoView />} />
+          <Route path='/mathvideoview' element={<MathVideoView />} />
+          <Route path='/englishvideoview' element={<EnglishVideoView />} />
+
          </Routes>
       </BrowserRouter>
     </div>

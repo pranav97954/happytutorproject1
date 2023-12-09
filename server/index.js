@@ -8,11 +8,12 @@ const multer = require('multer');
 const VideoModel = require('./models/Video');
 const sanitizeFilename = require('sanitize-filename');
 
+
 const app = express();
 
 app.use(express.json());
 app.use(cors());
-
+app.use(express.urlencoded({ extended: true }));
 // Update MongoDB connection URI
 const MONGODB_URI = 'mongodb+srv://pranavkumar97954:zlVxT7INPRW8Sjbi@cluster0.gi6fh6q.mongodb.net/akash?retryWrites=true&w=majority';
 
@@ -67,34 +68,94 @@ app.post('/register', (req, res) => {
     });
 });
 
-const PORT = process.env.PORT || 3001;
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
 
 //Video
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, 'videos'); // Set the destination to the 'videos' folder
-  },
-  filename: (req, file, cb) => {
-    cb(null,file.originalname);
-  },
-});
+// const storage = multer.diskStorage({
+//   destination: (req, file, cb) => {
+//     const folderName = req.body.folderName;
+//     console.log('Destination folder:', `videos/${folderName}`);
+//     cb(null, `videos/${folderName}`);
+//   },
+//   filename: (req, file, cb) => {
+//     const sanitizedFilename = sanitizeFilename(file.originalname);
+//     cb(null, sanitizedFilename);
+//   },
+// });
 
-const upload = multer({ storage: storage });
 
-app.post('/upload-video', upload.single('video'), async (req, res) => {
+// const upload = multer({ storage: storage });
+
+const createMulter = (folderName) => {
+  const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+      cb(null, `videos/${folderName}`);
+    },
+    filename: (req, file, cb) => {
+      const sanitizedFilename = sanitizeFilename(file.originalname);
+      cb(null, sanitizedFilename);
+    },
+  });
+
+  return multer({ storage: storage });
+};
+
+app.post('/english-upload-video', createMulter('english').single('video'),async (req, res) => {
+
   try {
     const { originalname: originalFilename } = req.file;
-    const { description } = req.body;
+    const { description,folderName } = req.body;
 
+    console.log('Received folderName:', folderName);
     // Sanitize the filename
     const sanitizedFilename = sanitizeFilename(originalFilename);
 
     // Create a new VideoModel instance
-    const video = new VideoModel({ filename: sanitizedFilename, description });
+    const video = new VideoModel({ filename: sanitizedFilename, description, folderName });
+
+    // Save the video details to the database
+    await video.save();
+
+    res.json({ status: 'Video upload successful' });
+  } catch (error) {
+    console.error('Upload Video Error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+app.post('/science-upload-video', createMulter('science').single('video'),async (req, res) => {
+  try {
+    const { originalname: originalFilename } = req.file;
+    const { description,folderName } = req.body;
+
+    console.log('Received folderName:', folderName);
+    // Sanitize the filename
+    const sanitizedFilename = sanitizeFilename(originalFilename);
+
+    // Create a new VideoModel instance
+    const video = new VideoModel({ filename: sanitizedFilename, description, folderName });
+
+    // Save the video details to the database
+    await video.save();
+
+    res.json({ status: 'Video upload successful' });
+  } catch (error) {
+    console.error('Upload Video Error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+app.post('/math-upload-video', createMulter('math').single('video'),async (req, res) => {
+  try {
+    const { originalname: originalFilename } = req.file;
+    const { description,folderName } = req.body;
+
+    console.log('Received folderName:', folderName);
+    // Sanitize the filename
+    const sanitizedFilename = sanitizeFilename(originalFilename);
+
+    // Create a new VideoModel instance
+    const video = new VideoModel({ filename: sanitizedFilename, description, folderName });
 
     // Save the video details to the database
     await video.save();
@@ -108,11 +169,18 @@ app.post('/upload-video', upload.single('video'), async (req, res) => {
 
 app.use('/videos', express.static('videos'));
 
-app.get('/get-videos', async (req, res) => {
+app.get('/get-videos/:folderName', async (req, res) => {
   try {
-    const videos = await VideoModel.find({}).exec();
+    const { folderName } = req.params;
+    const videos = await VideoModel.find({folderName}).exec();
     res.json(videos);
   } catch (error) {
     res.status(500).json({ error: 'Internal server error' });
   }
+});
+
+const PORT = process.env.PORT || 3001;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
