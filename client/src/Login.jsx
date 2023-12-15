@@ -25,7 +25,7 @@ function Login(){
           if (userRole === "admin") {
             navigate('/upload');
           } else {
-            navigate('/home');
+            navigate('/view');
           }
         } else {
           console.error('Login failed:', result.data.status);
