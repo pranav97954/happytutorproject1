@@ -1,8 +1,11 @@
 import { useState } from 'react'
-import Signup from './Signup'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import Login from './Login'
-import Home from './Home'
+import Footer from './front/Footer';
+import Header from './front/Header'
+import Home from './front/Home'
+import Login from './front/Login'
+import Signup from './front/Signup'
+import About from './front/about'
 
 import View from './view/SubjectView'
 import ScienceVideoView from './view/ScienceVideoView'
@@ -15,13 +18,14 @@ import ScienceVideoUpload from './upload/ScienceVideoUpload'
 import MathVideoUpload from './upload/MathVideoUpload';
 
 import Query from './page/query'
-
+import Courses from './front/Courses';
 
 function App() {
   return (
     <div>
+      <Header />
       <BrowserRouter>
-         <Routes>
+        <Routes>
           <Route path='/register' element={<Signup />} />
           <Route path='/login' element={<Login />} />
           <Route path='/' element={<Home />} />
@@ -37,9 +41,12 @@ function App() {
           <Route path='/englishvideoview' element={<EnglishVideoView />} />
 
           <Route path='/query' element={<Query />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/courses' element={<Courses />} />
 
-         </Routes>
+        </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   )
 }

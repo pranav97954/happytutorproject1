@@ -29,15 +29,18 @@ function Signup() {
   };
 
   return (
-    <div>
+    <div className="formbox">
       <form onSubmit={handleSubmit}>
-        <h2>Register</h2>
+        <div className="brand">
+          {/* <img src={Logo} alt="logo" /> */}
+          <h1>Register</h1>
+        </div>
         <input type="text" placeholder="Name" name="name" onChange={(e) => setName(e.target.value)} />
         <input type="email" placeholder="Email" name="email" onChange={(e) => setEmail(e.target.value)} />
         <input type="password" placeholder="Password" name="password" onChange={(e) => setPassword(e.target.value)} />
         <button type="submit">Register</button>
+        <span>Already have an account <Link to="/login">Login</Link></span>
       </form>
-      <Link to="/login">Login</Link>
     </div>
   );
 }
