@@ -1,16 +1,35 @@
-// Header.jsx
-
-import React from 'react';
-
-import '../CSS/header.css'
+import logo from '../images/logoTop.png'
+import '../CSS/style.css';
+import '../CSS/responsivestyle.css'
 
 const Header = () => {
+  
+let nav = document.querySelector(".navbar");
+window.onscroll = function () {
+    if(document.documentElement.scrollTop > 20){
+        nav.classList.add("header-scrolled");
+    }else{
+        nav.classList.remove("header-scrolled");
+    }
+
+    }
+
+
+    //Nav hide
+let navBar = document.querySelectorAll(".nav-link");
+let navcollapse = document.querySelector(".navbar-collapse.collapse");
+navBar.forEach(function(a){
+    a.addEventListener("click", function(){
+        navcollapse.classList.remove("show");
+    })
+})
+
   return (
     <header className="header_wrapper">
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
           <a className="navbar-brand" href="#">
-            <img src="images/logoTop.png" className="img-fluid" alt="logo" />
+            <img src={logo} className="img-fluid" alt="logo" />
           </a>
           <button
             className="navbar-toggler"
@@ -46,8 +65,8 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  ChatUs
+                <a className="nav-link" href="/query">
+                  Query
                 </a>
               </li>
               <li className="nav-item">
@@ -61,17 +80,15 @@ const Header = () => {
                 </a>
               </li>
             </ul>
-            <form className="d-flex">
+             <form className="d-flex">
               <input
                 className="form-control none me-2"
                 type="search"
                 placeholder="Search by course name"
                 aria-label="Search"
               />
-              <button className="btn btn-outline-success none-one" type="submit">
-                Search
-              </button>
-            </form>
+             <button type="button" className="btn btn-success btx">Search</button>
+            </form> 
           </div>
         </div>
       </nav>

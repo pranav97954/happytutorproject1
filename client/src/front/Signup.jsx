@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from 'axios';
 import { Link,useNavigate } from "react-router-dom";
+import '../CSS/signup.css'
 
 const serverURL = 'http://localhost:3001';
 function Signup() {
@@ -30,16 +31,25 @@ function Signup() {
 
   return (
     <div className="formbox">
-      <form onSubmit={handleSubmit}>
+      <form className="signbox" onSubmit={handleSubmit}>
         <div className="brand">
           {/* <img src={Logo} alt="logo" /> */}
-          <h1>Register</h1>
+          <h1 className="mb-4">Register</h1>
         </div>
-        <input type="text" placeholder="Name" name="name" onChange={(e) => setName(e.target.value)} />
-        <input type="email" placeholder="Email" name="email" onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" placeholder="Password" name="password" onChange={(e) => setPassword(e.target.value)} />
-        <button type="submit">Register</button>
-        <span>Already have an account <Link to="/login">Login</Link></span>
+        <div>
+
+        <input className="mb-4" type="text" placeholder="Name" name="name" onChange={(e) => setName(e.target.value)} />
+        </div>
+        <div>
+
+        <input className="mb-4" type="email" placeholder="Email" name="email" onChange={(e) => setEmail(e.target.value)} />
+        </div>
+        <div>
+
+        <input className="mb-4" type="password" placeholder="Password" name="password" onChange={(e) => setPassword(e.target.value)} />
+        </div>
+        <div><button type="button" className="btn btn-success">Register</button></div>
+        <span className="span">Already have an account <Link to="/login">Login</Link></span>
       </form>
     </div>
   );

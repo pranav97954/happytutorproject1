@@ -1,7 +1,10 @@
-import React from 'react';
 import '../CSS/about.css'
+import '../CSS/style.css';
+import '../CSS/responsivestyle.css'
+import img from '../images/about us/about.jpg'
 
 const About = () => {
+  
   return (
     <>
       <section className="about mt-5">
@@ -46,7 +49,7 @@ const About = () => {
             </div>
 
             <div className="col-lg-6 col-md-6 col-7">
-              <img className="img-fluid about_img" src="images/about us/about.jpg" alt="about" />
+              <img className="img-fluid about_img" src={img} alt="about" />
             </div>
           </div>
 

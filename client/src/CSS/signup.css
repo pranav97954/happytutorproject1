@@ -1,5 +1,9 @@
-.loginbox{
-   
+.formbox{
+    display: grid;
+    place-items: center;
+}
+
+.signbox{
     height: 400px;
     width: 40%;
     background-color:#fff;
@@ -10,34 +14,26 @@
     border-radius: 1rem;
     align-items: center;
     text-align: center; 
-
-    
-   
-}
-
-.formbox{
-    display: grid;
-    place-items: center;
-
-    
-  
-  
-
 }
 
 
-
-.loginbox h1{
+.signbox h1{
     color: #111;
     font-weight: 500;
 }
 
-.loginbox h2{
+.signbox h2{
     color: #111;
     font-weight: 500;
     font-size: 1rem;
 }
 
-.loginbox span{
+.signbox .span{
     color: #777;
+}
+
+.signbox h1{
+    color:#111;
+    font-size: 3rem;
+    font-weight: 500;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import '../CSS/style.css';
 import slide1 from '../images/slides/slide1.webp';
 import slide2 from '../images/slides/slide2.webp';
@@ -442,7 +442,7 @@ const Home = () => {
       </div>
     </section>
     
-    {/* <section className="form mt-4 mb-5">
+     <section className="form mt-4 mb-5">
       <div className="container">
         <h3 style={{ color: "#111", fontWeight: 700, fontSize: "1.5rem" }}>
           Get in touch
@@ -548,7 +548,7 @@ const Home = () => {
           </div>
         </form>
       </div>
-    </section> */}
+    </section> 
 
   </div>
   );

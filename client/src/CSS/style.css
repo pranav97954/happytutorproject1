@@ -163,14 +163,15 @@ p{
 
 /*(2) NAVBAR */
 
-.header_wrapper{
-    margin-bottom: 6rem;
-}
+
 
 .header_wrapper .navbar{
 
     -webkit-transition:all .2s linear;
     transition: all .2s linear;
+    position: relative;
+    
+    
     
 }
 
@@ -255,6 +256,7 @@ p{
     padding: 1rem;
     margin: 1rem;
     
+    
   }
   
   .footer .copyright p{
@@ -316,12 +318,16 @@ p{
 
 /*4th section*/
 
+
+
 .Exams .Exam{
     box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
     padding: 1rem;
     text-align: center;
     align-items: center;
     gap: 1rem;
+
+    
 
   }
 

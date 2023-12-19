@@ -1,8 +1,10 @@
-import React from 'react'
+// import React from 'react'
 import { useState } from "react";
 import axios from 'axios';
 import { Link,useNavigate } from "react-router-dom";
-import '../CSS/login.css'
+
+ import '../CSS/login.css'
+ 
 
 const serverURL = 'http://localhost:3001';
 
@@ -40,18 +42,27 @@ function Login(){
 
   return (
     <div className='formbox'>
-      <form onSubmit={handleSubmit}>
+      <form className="loginbox" onSubmit={handleSubmit}>
         <div className="brand">
           {/* <img src={Logo} alt="logo" /> */}
           <h1>Aakash</h1>
         </div>
+        <div>
+          <h2>UserName</h2>
         <input type="email" placeholder="Email" name="email" onChange={(e) => setEmail(e.target.value)} />
+        </div>
+        <div>
+        <h2>Password</h2>
         <input type="password" placeholder="Password" name="password" onChange={(e) => setPassword(e.target.value)} />
-        <button type="submit">Login</button>
+        </div>
+        
         <span>
           Don't have an account ? <Link to="/register">Create One.</Link>
         </span>
+        <div><button type="button" className="btn btn-success">Login</button></div>
+       
       </form>
+      
     </div>
   );
 }

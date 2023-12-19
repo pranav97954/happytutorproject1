@@ -1,6 +1,6 @@
-import React from "react";
-import "../CSS/style.css";
-import "../CSS/courses.css";
+import '../CSS/style.css';
+import '../CSS/responsivestyle.css'
+ import "../CSS/courses.css";
 import card1 from '../images/courses/card1.jpg'
 import card2 from '../images/courses/card2.jpg'
 import card3 from '../images/courses/card3.jpg'
@@ -12,7 +12,7 @@ import card8 from '../images/courses/card8.jpg'
 import card9 from '../images/courses/card9.jpg'
 import card10 from '../images/courses/card10.jpg'
 import card11 from '../images/courses/card11.jpg'
-import card12 from '../images/courses/card12.jpg'
+
 import card13 from '../images/courses/card13.jpg'
 import card14 from '../images/courses/card14.jpg'
 import card15 from '../images/courses/card15.jpg'
@@ -30,6 +30,8 @@ import part4 from '../images/partners/part4.png'
 import instructor from '../images/courses/instructor-2x-v3.jpg'
 
 const Courses = () => {
+  
+ 
   return (
     <>
       <section className="course_form mb-5">
@@ -95,7 +97,7 @@ const Courses = () => {
                 </a>
                 <div className="card-body">
                   <a href="..">
-                    <p className="card-text">Communication Tutors</p>
+                    <p className="card-text mb-3">Communication Tutors</p>
                   </a>
                   <a href="..">
                     <h6>
@@ -122,7 +124,7 @@ const Courses = () => {
                 </a>
                 <div className="card-body">
                   <a href="..">
-                    <p className="card-text">Math Tutors</p>
+                    <p className="card-text mb-3">Math Tutors</p>
                   </a>
                   <a href="..">
                     <h6>
@@ -347,7 +349,7 @@ const Courses = () => {
                 </a>
                 <div className="card-body">
                   <a href="..">
-                    <p className="card-text">Spanish Tutors</p>
+                    <p className="card-text mb-3">Spanish Tutors</p>
                   </a>
                   <a href="..">
                     <h6>
@@ -374,7 +376,7 @@ const Courses = () => {
                 </a>
                 <div className="card-body">
                   <a href="..">
-                    <p className="card-text">Writing Tutors</p>
+                    <p className="card-text mb-3">Writing Tutors</p>
                   </a>
                   <a href="..">
                     <h6>
@@ -390,32 +392,7 @@ const Courses = () => {
               </div>
             </div>
 
-            <div className="col-lg-2 col-md-2 col-6">
-              <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
-                  <img
-                    src={card12}
-                    className="card-img-top"
-                    alt="..."
-                  />
-                </a>
-                <div className="card-body">
-                  <a href="..">
-                    <p className="card-text mb-4">Esl Tutors</p>
-                  </a>
-                  <a href="..">
-                    <h6>
-                      3.4<i className="fa-solid fa-star"></i>(1.1k Reviews)
-                    </h6>
-                  </a>
-                  <a href="..">
-                    <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
-                    </h6>
-                  </a>
-                </div>
-              </div>
-            </div>
+           
           </div>
 
           {/* other cards */}

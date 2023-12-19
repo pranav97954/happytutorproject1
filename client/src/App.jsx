@@ -17,7 +17,7 @@ import EnglishVideoUpload from './upload/EnglishVideoUpload'
 import ScienceVideoUpload from './upload/ScienceVideoUpload'
 import MathVideoUpload from './upload/MathVideoUpload';
 
-import Query from './page/query'
+import Query from './page/Query'
 import Courses from './front/Courses';
 
 function App() {
