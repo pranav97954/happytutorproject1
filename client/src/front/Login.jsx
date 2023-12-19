@@ -74,7 +74,7 @@ function Login(){
         <div className="cnt" id="cntainer">
 
           <div className="form-cnt sign-up-cnt">
-            <form onSubmit={handleRegisterSubmit}>
+            <form className='fm' onSubmit={handleRegisterSubmit}>
               <h1>Create Account</h1>
               <span>Use your email for registration</span>
               <input type="text" placeholder="Name" name="name" onChange={(e) => setName(e.target.value)} />
@@ -85,7 +85,7 @@ function Login(){
           </div>
 
           <div className="form-cnt sign-in-cnt">
-            <form onSubmit={handleSubmit}>
+            <form className='fm' onSubmit={handleSubmit}>
               <h1>Sign in</h1>
               <span>or use your account</span>
               <input type="email" placeholder="Email" name="email" onChange={(e) => setEmail(e.target.value)} />
