@@ -1,15 +1,13 @@
-// import React from 'react'
+import React from 'react'
 import { useState } from "react";
 import axios from 'axios';
 import { Link,useNavigate } from "react-router-dom";
-
- import '../CSS/login.css'
- 
+import '../CSS/login.css'
 
 const serverURL = 'http://localhost:3001';
 
 function Login(){
-
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate()
@@ -39,31 +37,83 @@ function Login(){
         // Handle other errors (e.g., network error, server error)
       });
   };
+  const handleSignUpClick = () => {
+    const cnt = document.getElementById('cntainer');
+    cnt.classList.add('right-panel-active');
+  };
+
+  const handleSignInClick = () => {
+    const cnt = document.getElementById('cntainer');
+    cnt.classList.remove('right-panel-active');
+  };
+  const handleRegisterSubmit = (e) => {
+    e.preventDefault();
+    axios.post(`${serverURL}/login`, { name, email, password })
+  .then(result => {console.log(result.data)
+  navigate('/login') 
+  })
+  .catch(error => {
+    console.error('Axios Error:', error);
+    if (error.response) {
+      console.error('Server responded with:', error.response.data);
+      console.error('Status code:', error.response.status);
+    } else if (error.request) {
+      console.error('No response received from the server');
+    } else {
+      console.error('Error setting up the request:', error.message);
+    }
+  });
+  };
 
   return (
-    <div className='formbox'>
-      <form className="loginbox" onSubmit={handleSubmit}>
-        <div className="brand">
-          {/* <img src={Logo} alt="logo" /> */}
-          <h1>Aakash</h1>
-        </div>
-        <div>
-          <h2>UserName</h2>
-        <input type="email" placeholder="Email" name="email" onChange={(e) => setEmail(e.target.value)} />
-        </div>
-        <div>
-        <h2>Password</h2>
-        <input type="password" placeholder="Password" name="password" onChange={(e) => setPassword(e.target.value)} />
-        </div>
-        
-        <span>
-          Don't have an account ? <Link to="/register">Create One.</Link>
-        </span>
-        <div><button type="button" className="btn btn-success">Login</button></div>
-       
-      </form>
+    <div>
+
       
+
+      <div className="fmbd">
+        <div className="cnt" id="cntainer">
+
+          <div className="form-cnt sign-up-cnt">
+            <form onSubmit={handleRegisterSubmit}>
+              <h1>Create Account</h1>
+              <span>Use your email for registration</span>
+              <input type="text" placeholder="Name" name="name" onChange={(e) => setName(e.target.value)} />
+              <input type="email" placeholder="Email" name="email" onChange={(e) => setEmail(e.target.value)}  />
+              <input type="password" placeholder="Password" name="password" onChange={(e) => setPassword(e.target.value)} />
+              <button>Sign Up</button>
+            </form>
+          </div>
+
+          <div className="form-cnt sign-in-cnt">
+            <form onSubmit={handleSubmit}>
+              <h1>Sign in</h1>
+              <span>or use your account</span>
+              <input type="email" placeholder="Email" name="email" onChange={(e) => setEmail(e.target.value)} />
+              <input type="password" placeholder="Password" name="password" onChange={(e) => setPassword(e.target.value)} />
+              <a href="#">Forgot your password?</a>
+              <button>Sign In</button>
+            </form>
+          </div>
+          
+          <div className="overlay-cnt">
+            <div className="overlay">
+              <div className="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>To keep connected with us, please login with your personal info</p>
+                <button className="ghost" onClick={handleSignInClick}>Sign In</button>
+              </div>
+              <div className="overlay-panel overlay-right">
+                 <h1>Hello, Friend!</h1>
+                 <p>Enter your personal details and start your journey with us</p>
+                 <button className="ghost" onClick={handleSignUpClick}>Sign Up</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
+    
   );
 }
 

@@ -4,7 +4,6 @@ import Footer from './front/Footer';
 import Header from './front/Header'
 import Home from './front/Home'
 import Login from './front/Login'
-import Signup from './front/Signup'
 import About from './front/about'
 
 import View from './view/SubjectView'
@@ -19,6 +18,7 @@ import MathVideoUpload from './upload/MathVideoUpload';
 
 import Query from './page/Query'
 import Courses from './front/Courses';
+//import LoginComponent from './front/LoginComponent';
 
 function App() {
   return (
@@ -26,7 +26,6 @@ function App() {
       <Header />
       <BrowserRouter>
         <Routes>
-          <Route path='/register' element={<Signup />} />
           <Route path='/login' element={<Login />} />
           <Route path='/' element={<Home />} />
           <Route path='/upload' element={<Upload />} />
@@ -43,6 +42,7 @@ function App() {
           <Route path='/query' element={<Query />} />
           <Route path='/about' element={<About />} />
           <Route path='/courses' element={<Courses />} />
+         
 
         </Routes>
       </BrowserRouter>
