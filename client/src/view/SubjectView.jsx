@@ -28,7 +28,7 @@ const SubjectView = () => {
       <Link to="/englishvideoview">English View</Link>
       <Link to="/sciencevideoview">Science View</Link>
       <Link to="/mathvideoview">Math View</Link>
-      
+      <Link to="/personalvideoview">Personal View</Link>
       {/* Logout button */}
       <button onClick={handleLogout}>Logout</button>
     </div>

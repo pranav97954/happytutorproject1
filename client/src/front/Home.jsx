@@ -184,7 +184,7 @@ const Home = () => {
     <h3>Top Categories</h3>
     <div className="row mt-4">
       <div className="col-lg-3 col-6 mb-4 Exam">
-        <a href="#">
+        <a href="/personalvideoview">
           <img
             style={{ width: "auto", height: "3rem" }}
             className="img-fluid mb-1"
@@ -192,12 +192,12 @@ const Home = () => {
             alt=""
           />
         </a>
-        <a href="#">
+        <a href="/personalvideoview">
           <p>Personal development</p>
         </a>
       </div>
       <div className="col-lg-3 col-6 mb-4 Exam">
-        <a href="#">
+        <a href="/classical">
           <img
             style={{ width: "auto", height: "3rem" }}
             className="img-fluid mb-1"
@@ -205,12 +205,12 @@ const Home = () => {
             alt=""
           />
         </a>
-        <a href="#">
+        <a href="/classical">
           <p>Classical Dance</p>
         </a>
       </div>
       <div className="col-lg-3 col-6 mb-4 Exam">
-        <a href="#">
+        <a href="/itview">
           <img
             style={{ width: "auto", height: "3rem" }}
             className="img-fluid mb-1"
@@ -218,12 +218,12 @@ const Home = () => {
             alt=""
           />
         </a>
-        <a href="#">
+        <a href="/itview">
           <p>IT Education</p>
         </a>
       </div>
       <div className="col-lg-3 col-6 mb-4 Exam">
-        <a href="#">
+        <a href="/mathvideoview">
           <img
             style={{ width: "auto", height: "3rem" }}
             className="img-fluid mb-1"
@@ -231,7 +231,7 @@ const Home = () => {
             alt=""
           />
         </a>
-        <a href="#">
+        <a href="/mathvideoview">
           <p>Vedic Maths</p>
         </a>
       </div>
@@ -239,7 +239,7 @@ const Home = () => {
 
     <div className="row mt-4">
       <div className="col-lg-3 col-6 mb-4 Exam">
-        <a href="#">
+        <a href="/yogaview">
           <img
             style={{ width: "auto", height: "3rem" }}
             className="img-fluid mb-1"
@@ -247,12 +247,12 @@ const Home = () => {
             alt=""
           />
         </a>
-        <a href="#">
+        <a href="/yogaview">
           <p>Yoga</p>
         </a>
       </div>
       <div className="col-lg-3 col-6 mb-4 Exam">
-        <a href="#">
+        <a href="/religiousview">
           <img
             style={{ width: "auto", height: "3rem" }}
             className="img-fluid mb-1"
@@ -260,12 +260,12 @@ const Home = () => {
             alt=""
           />
         </a>
-        <a href="#">
+        <a href="/religiousview">
           <p>Religious Education</p>
         </a>
       </div>
       <div className="col-lg-3 col-6 mb-4 Exam">
-        <a href="#">
+        <a href="/englishvideoview">
           <img
             style={{ width: "auto", height: "3rem" }}
             className="img-fluid mb-1"
@@ -273,12 +273,12 @@ const Home = () => {
             alt=""
           />
         </a>
-        <a href="#">
+        <a href="/englishvideoview">
           <p>Communication Skills</p>
         </a>
       </div>
       <div className="col-lg-3 col-6 mb-4 Exam">
-        <a href="#">
+        <a href="/musicview">
           <img
             style={{ width: "auto", height: "3rem" }}
             className="img-fluid mb-1"
@@ -286,7 +286,7 @@ const Home = () => {
             alt=""
           />
         </a>
-        <a href="#">
+        <a href="/musicview">
           <p>Music Lessons</p>
         </a>
       </div>

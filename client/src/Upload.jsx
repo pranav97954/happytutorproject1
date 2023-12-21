@@ -27,6 +27,12 @@ const Upload = () => {
       <Link to="/englishvideoupload">EnglishUpload</Link>
       <Link to="/sciencevideoupload">ScienceUpload</Link>
       <Link to="/mathvideoupload">MathUpload</Link>
+      <Link to="/personalvideoupload">PersonalDevelopmentUpload</Link>
+      <Link to="/classicalupload">ClassicalDanceUpload</Link>
+      <Link to="/itupload">ItEducationUpload</Link>
+      <Link to="/yogaupload">YogaUpload</Link>
+      <Link to="/religiousupload">ReligiousUpload</Link>
+      <Link to="/musicupload">MusicUpload</Link>
       <button onClick={handleLogout}>Logout</button>
     </div>
   );

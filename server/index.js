@@ -161,6 +161,140 @@ app.post('/math-upload-video', createMulter('math').single('video'),async (req, 
   }
 });
 
+//Personal Development
+app.post('/personal-upload-video', createMulter('personaldp').single('video'),async (req, res) => {
+  try {
+    const { originalname: originalFilename } = req.file;
+    const { description,folderName } = req.body;
+
+    console.log('Received folderName:', folderName);
+    // Sanitize the filename
+    const sanitizedFilename = sanitizeFilename(originalFilename);
+
+    // Create a new VideoModel instance
+    const video = new VideoModel({ filename: sanitizedFilename, description, folderName });
+
+    // Save the video details to the database
+    await video.save();
+
+    res.json({ status: 'Video upload successful' });
+  } catch (error) {
+    console.error('Upload Video Error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+//Classical Dance
+app.post('/classical-upload-video', createMulter('ClassicalDance').single('video'),async (req, res) => {
+  try {
+    const { originalname: originalFilename } = req.file;
+    const { description,folderName } = req.body;
+
+    console.log('Received folderName:', folderName);
+    // Sanitize the filename
+    const sanitizedFilename = sanitizeFilename(originalFilename);
+
+    // Create a new VideoModel instance
+    const video = new VideoModel({ filename: sanitizedFilename, description, folderName });
+
+    // Save the video details to the database
+    await video.save();
+
+    res.json({ status: 'Video upload successful' });
+  } catch (error) {
+    console.error('Upload Video Error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+//It Education
+app.post('/It-upload-video', createMulter('It').single('video'),async (req, res) => {
+  try {
+    const { originalname: originalFilename } = req.file;
+    const { description,folderName } = req.body;
+
+    console.log('Received folderName:', folderName);
+    // Sanitize the filename
+    const sanitizedFilename = sanitizeFilename(originalFilename);
+
+    // Create a new VideoModel instance
+    const video = new VideoModel({ filename: sanitizedFilename, description, folderName });
+
+    // Save the video details to the database
+    await video.save();
+
+    res.json({ status: 'Video upload successful' });
+  } catch (error) {
+    console.error('Upload Video Error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+//Yoga
+app.post('/Yoga-upload-video', createMulter('Yoga').single('video'),async (req, res) => {
+  try {
+    const { originalname: originalFilename } = req.file;
+    const { description,folderName } = req.body;
+
+    console.log('Received folderName:', folderName);
+    // Sanitize the filename
+    const sanitizedFilename = sanitizeFilename(originalFilename);
+
+    // Create a new VideoModel instance
+    const video = new VideoModel({ filename: sanitizedFilename, description, folderName });
+
+    // Save the video details to the database
+    await video.save();
+
+    res.json({ status: 'Video upload successful' });
+  } catch (error) {
+    console.error('Upload Video Error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+//Religious
+app.post('/Religious-upload-video', createMulter('Religious').single('video'),async (req, res) => {
+  try {
+    const { originalname: originalFilename } = req.file;
+    const { description,folderName } = req.body;
+
+    console.log('Received folderName:', folderName);
+    // Sanitize the filename
+    const sanitizedFilename = sanitizeFilename(originalFilename);
+
+    // Create a new VideoModel instance
+    const video = new VideoModel({ filename: sanitizedFilename, description, folderName });
+
+    // Save the video details to the database
+    await video.save();
+
+    res.json({ status: 'Video upload successful' });
+  } catch (error) {
+    console.error('Upload Video Error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+//Music
+app.post('/Music-upload-video', createMulter('Music').single('video'),async (req, res) => {
+  try {
+    const { originalname: originalFilename } = req.file;
+    const { description,folderName } = req.body;
+
+    console.log('Received folderName:', folderName);
+    // Sanitize the filename
+    const sanitizedFilename = sanitizeFilename(originalFilename);
+
+    // Create a new VideoModel instance
+    const video = new VideoModel({ filename: sanitizedFilename, description, folderName });
+
+    // Save the video details to the database
+    await video.save();
+
+    res.json({ status: 'Video upload successful' });
+  } catch (error) {
+    console.error('Upload Video Error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 app.use('/videos', express.static('videos'));
 
 //Video View Section
