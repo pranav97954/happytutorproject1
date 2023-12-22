@@ -1,6 +1,6 @@
 import '../CSS/style.css';
 import '../CSS/responsivestyle.css'
-import logo from '../images/logoTop.png'
+import logo from '../images/Aakash.png';
 import logo1 from '../images/footer1.png'
 import logo2 from '../images/footer2.png'
 
@@ -73,14 +73,17 @@ const Footer = () => {
               </div>
              
             </div>
-            <div className="col-lg-3 col-sm-2 col-12" > <div className="dropdown">
-            <a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Contact Us
-            </a>
-
-           
-          </div></div>
+            <div className="col-lg-3 col-sm-2 col-6 footer_contact1">
+              <div className="row">
+                <div className="col-lg-12 col-sm-12">
+                  <a href="#">Contact Us</a>
+                </div>
+                <div className="col-lg-12 col-sm-12">
+                  <a href="#">Carrer</a>
+                </div>               
+              </div>
+             
+            </div>
            
             
           </div>

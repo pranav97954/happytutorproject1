@@ -61,7 +61,7 @@ const Courses = () => {
           <div className="row mb-5">
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card1}
                     className="card-img-top"
@@ -69,17 +69,17 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <a href="..">
+                  <a href="/book">
                     <p className="card-text mb-3">English Tutors</p>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.8<i className="fa-solid fa-star"></i>(1.3k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                      BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -88,7 +88,7 @@ const Courses = () => {
 
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card2}
                     className="card-img-top"
@@ -96,17 +96,17 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <a href="..">
+                  <a href="/book">
                     <p className="card-text mb-3">Communication Tutors</p>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.1<i className="fa-solid fa-star"></i>(2.2k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                      BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -115,7 +115,7 @@ const Courses = () => {
 
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card3}
                     className="card-img-top"
@@ -123,17 +123,17 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <a href="..">
+                  <a href="/book">
                     <p className="card-text mb-3">Math Tutors</p>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.2<i className="fa-solid fa-star"></i>(4.3k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                    BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -142,7 +142,7 @@ const Courses = () => {
 
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card4}
                     className="card-img-top"
@@ -150,17 +150,17 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <a href="..">
+                  <a href="/book">
                     <p className="card-text mb-3">Coding Tutors</p>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       3.4<i className="fa-solid fa-star"></i>(1.1k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                    BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -172,7 +172,7 @@ const Courses = () => {
           <div className="row mb-5">
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card5}
                     className="card-img-top"
@@ -180,17 +180,17 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <a href="..">
+                  <a href="/book">
                     <p className="card-text mb-3">Reading Tutors</p>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.8<i className="fa-solid fa-star"></i>(1.3k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                    BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -199,7 +199,7 @@ const Courses = () => {
 
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card6}
                     className="card-img-top"
@@ -208,14 +208,14 @@ const Courses = () => {
                 </a>
                 <div className="card-body">
                   <p className="card-text mb-3">Science Tutors</p>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.5<i className="fa-solid fa-star"></i>(1.3k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                    BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -224,7 +224,7 @@ const Courses = () => {
 
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card7}
                     className="card-img-top"
@@ -232,17 +232,17 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <a href="..">
+                  <a href="/book">
                     <p className="card-text mb-3">Reasoning Tutors</p>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.7<i className="fa-solid fa-star"></i>(1.2k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                    BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -251,7 +251,7 @@ const Courses = () => {
 
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card8}
                     className="card-img-top"
@@ -259,17 +259,17 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <a href="..">
+                  <a href="/book">
                     <p className="card-text mb-3">Painting Tutors</p>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.0<i className="fa-solid fa-star"></i>(4.3k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                    BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -286,7 +286,7 @@ const Courses = () => {
           <div className="row mb-5">
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card16}
                     className="card-img-top"
@@ -294,17 +294,17 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <a href="..">
+                  <a href="/book">
                     <p className="card-text mb-3">Geometry Tutors</p>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.0<i className="fa-solid fa-star"></i>(4.3k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                    BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -313,7 +313,7 @@ const Courses = () => {
 
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card9}
                     className="card-img-top"
@@ -321,17 +321,17 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <a href="..">
+                  <a href="/book">
                     <p className="card-text mb-3">English Tutors</p>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.8<i className="fa-solid fa-star"></i>(1.3k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                    BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -340,7 +340,7 @@ const Courses = () => {
 
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card10}
                     className="card-img-top"
@@ -348,17 +348,17 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <a href="..">
+                  <a href="/book">
                     <p className="card-text mb-3">Spanish Tutors</p>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.1<i className="fa-solid fa-star"></i>(2.2k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                    BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -367,7 +367,7 @@ const Courses = () => {
 
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card11}
                     className="card-img-top"
@@ -375,17 +375,17 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <a href="..">
+                  <a href="/book">
                     <p className="card-text mb-3">Writing Tutors</p>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.2<i className="fa-solid fa-star"></i>(4.3k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                    BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -399,7 +399,7 @@ const Courses = () => {
           <div className="row mb-5">
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card13}
                     className="card-img-top"
@@ -407,17 +407,17 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <a href="..">
+                  <a href="/book">
                     <p className="card-text mb-3">Spelling Tutors</p>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.8<i className="fa-solid fa-star"></i>(1.3k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                    BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -426,7 +426,7 @@ const Courses = () => {
 
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card14}
                     className="card-img-top"
@@ -435,14 +435,14 @@ const Courses = () => {
                 </a>
                 <div className="card-body">
                   <p className="card-text mb-3">Statistics Tutors</p>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.5<i className="fa-solid fa-star"></i>(1.3k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                    BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -451,7 +451,7 @@ const Courses = () => {
 
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card15}
                     className="card-img-top"
@@ -459,17 +459,17 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <a href="..">
+                  <a href="/book">
                     <p className="card-text mb-3">Biology Tutors</p>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.7<i className="fa-solid fa-star"></i>(1.2k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                    BOOK NOW
                     </h6>
                   </a>
                 </div>
@@ -478,7 +478,7 @@ const Courses = () => {
 
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
-                <a href="..">
+                <a href="/book">
                   <img
                     src={card16}
                     className="card-img-top"
@@ -486,17 +486,17 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <a href="..">
+                  <a href="/book">
                     <p className="card-text mb-3">Geometry Tutors</p>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
                       4.0<i className="fa-solid fa-star"></i>(4.3k Reviews)
                     </h6>
                   </a>
-                  <a href="..">
+                  <a href="/book">
                     <h6>
-                      ADD TO CART<i className="fa-solid fa-cart-shopping"></i>
+                    BOOK NOW
                     </h6>
                   </a>
                 </div>

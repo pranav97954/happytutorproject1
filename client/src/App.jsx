@@ -20,7 +20,7 @@ import PersonalVideoUpload from './upload/PersonalVideoUpload';
 
 import Query from './page/Query'
 import Courses from './front/Courses';
-import Banana from './page/banana';
+
 import ClassicalDanceView from './view/ClassicalDanceView';
 import ClassicalDanceUpload from './upload/ClassicalDanceupload';
 import ItView from './view/ItView';
@@ -31,6 +31,9 @@ import ReligiousUpload from './upload/ReligiousUpload';
 import ReligiousView from './view/ReligiousView';
 import MusicUpload from './upload/MusicUpload';
 import MusicView from './view/MusicView';
+import Careers from './front/Careers';
+import ContactForm from './front/ContactForm';
+
 //import LoginComponent from './front/LoginComponent';
 
 function App() {
@@ -48,6 +51,8 @@ function App() {
         <Routes>
           <Route path='/login' element={<Login />} />
           <Route path='/' element={<Home />} />
+          <Route path='/career' element={<Careers />} />
+          <Route path='/book' element={<ContactForm />} />
           <Route path='/upload' element={<Upload />} />
           <Route path='/mathvideoupload' element={<MathVideoUpload />} />
           <Route path='/englishvideoupload' element={<EnglishVideoUpload />} />

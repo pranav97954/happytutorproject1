@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require('mongoose');
 const cors = require("cors");
 const UserModel = require('./models/User');
+const CareerModel = require('./models/Career');
 
 //Video section
 const multer = require('multer');
@@ -68,6 +69,33 @@ app.post('/register', (req, res) => {
   UserModel.create({ name, email, password })
     .then((user) => {
       console.log('User registered:', user);
+      res.json({ message: 'Registration successful' });
+    })
+    .catch((err) => {
+      console.error('Error creating user:', err);
+      res.status(500).json({ error: 'Internal server error' });
+    });
+});
+
+app.post('/career', (req, res) => {
+  const { name, email, jobrole ,location, contact } = req.body;
+
+  CareerModel.create({ name, email, jobrole, location ,contact })
+    .then((career) => {
+      console.log('Registration Successful we will contact you shortly', career);
+      res.json({ message: 'Registration successful' });
+    })
+    .catch((err) => {
+      console.error('Error creating user:', err);
+      res.status(500).json({ error: 'Internal server error' });
+    });
+});
+
+app.post('/cttfm', (req, res) => {
+  const { fname, lname, email, location, contact,requirement } = req.body;
+  ContactModel.create({ fname, lname ,email, location ,contact ,requirement})
+    .then((contactform) => {
+      console.log('we will contact you shortly', contactform);
       res.json({ message: 'Registration successful' });
     })
     .catch((err) => {
@@ -368,6 +396,8 @@ app.post('/post-reply/:queryId', async (req, res) => {
 
 //logout
 const session = require('express-session');
+const ContactModel = require("./models/Contact");
+
 app.use(
   session({
     //secret: 'a38ebe1628cf6092be0ba8aa8e1ed286875afd11e1da2dabfc875d6afc4a66c9', // Replace with a secure secret
