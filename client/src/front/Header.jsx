@@ -9,7 +9,7 @@ const Header = () => {
     <header className="header_wrapper">
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <img src={logo} className="img-fluid" alt="logo" />
           </a>
           <button

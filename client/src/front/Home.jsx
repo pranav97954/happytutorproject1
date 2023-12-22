@@ -1,5 +1,6 @@
 // import React from "react";
 import '../CSS/style.css';
+import '../CSS/home.css';
 import slide1 from '../images/slides/slide1.webp';
 import slide2 from '../images/slides/slide2.webp';
 import slide3 from '../images/slides/slide3.webp';

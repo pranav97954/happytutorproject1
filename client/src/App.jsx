@@ -1,5 +1,5 @@
 //import { useState } from 'react'
-import { BrowserRouter,Routes,Route,useNavigate } from 'react-router-dom'
+import { BrowserRouter,Routes,Route,useNavigate, NavLink } from 'react-router-dom'
 import Footer from './front/Footer';
 import Header from './front/Header'
 import Home from './front/Home'
@@ -33,6 +33,7 @@ import MusicUpload from './upload/MusicUpload';
 import MusicView from './view/MusicView';
 import Careers from './front/Careers';
 import ContactForm from './front/ContactForm';
+//import Navbar from './front/Navbar';
 
 //import LoginComponent from './front/LoginComponent';
 
@@ -47,6 +48,7 @@ function App() {
   return (
     <div>
       {showHeaderFooter() && <Header />}
+      {/* {showHeaderFooter() && <Navbar />} */}
       <BrowserRouter>
         <Routes>
           <Route path='/login' element={<Login />} />

@@ -628,9 +628,9 @@ const Courses = () => {
                 Aakash Academy. We provide the tools and skills to teach what
                 you love.
               </p>
-              <button type="button" className="btn btn-success">
+              <a href="/career"><button type="button" className="btn btn-success" >
                 Start teaching today
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
