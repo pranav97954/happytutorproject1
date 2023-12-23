@@ -1,6 +1,53 @@
+.services_wrapper{
+    margin-top: -55px;
+    /* background-color: black; */
+    background-color: rgb(104, 107, 255);
+    color: white;
+    padding-bottom: 50px;
+}
+.services_wrapper h2{
+    padding-top: 30px;
+    color: white;
+}
+.services_wrapper p{
+    padding-top: 10px;
+    color: white;
+}
+.services_wrapper .container .row .col-lg-3 .card{
+    border-radius: 50px;
+    background-color: white;
+}
+.services_wrapper .container .row .col-lg-3 .card:hover{
+    border-radius: 50px;
+    background-color: rgb(104, 107, 255);
+}
+.services_wrapper .card p{
+   color: black;
+}
+
+
+
 .Exams{
     align-items: center;
     text-align: center;
     color: white;
-    
+}
+.Exams .row .cp{
+    background-color: rgb(109, 109, 244);
+}
+.Exams .row .cp a p{
+    color: white;
+}
+
+
+
+.Events{
+    /* background: #323c3f; */
+    /* background-color: rgb(102, 68, 255); */
+    padding-bottom: 0;
+}
+.Events h2{
+    text-align: center;
+    color: black;
+    padding-top: 50px;
 }

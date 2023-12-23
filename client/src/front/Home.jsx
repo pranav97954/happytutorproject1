@@ -20,7 +20,6 @@ import diwali from '../images/events/diwali.jpg';
 import tour from '../images/events/tour.jpg';
 import debate from '../images/events/debate.jpg';
 
-
 const Home = () => {  
   return (
     <div>
@@ -106,78 +105,6 @@ const Home = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      {/* <!--3rd Section cards--> */}
-
-      <section id="services" className="services_wrapper">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12 text-center mb-2">
-              <h2>SERVICES OFFERS</h2>
-              <p>
-                We specialize in Educational services tailored to meet your
-                digital needs and <br className="d-none d-lg-block" /> Our team
-                excels .
-              </p>
-            </div>
-            <div className="col-lg-3 col-sm-6 mb-4">
-              <div className="card rounded-0 border-0 text-center py-5 px-3">
-                <div>
-                  <i className="fa-solid fa-bus"></i>
-                </div>
-                <h5 className="text-uppercase mt-4 mb-3">Transport</h5>
-                <p>
-                  The academy has Provide Transport Facility with GPS live
-                  Location tracking and it have the Advance Mobile Notification
-                  at.{" "}
-                </p>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-sm-6 mb-4">
-              <div className="card rounded-0 border-0 text-center py-5 px-3">
-                <div>
-                  <i className="fa-solid fa-bed"></i>
-                </div>
-                <h5 className="text-uppercase mt-4 mb-3">Hostel Facilities</h5>
-                <p>
-                  here are 110 rooms in hostel that can provide hostel facility
-                  to the 350 boy’s & 200 girl’s ,Girl’s & boy’s hostel are
-                  separated.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-sm-6 mb-4">
-              <div className="card rounded-0 border-0 text-center py-5 px-3">
-                <div>
-                  <i className="fa-solid fa-utensils"></i>
-                </div>
-                <h5 className="text-uppercase mt-4 mb-3">Canteen & meals</h5>
-                <p>
-                  Under the care and supervision of the administrator & food in
-                  charge proper functioning of the dining hall of very high
-                  standards.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-sm-6 mb-4">
-              <div className="card rounded-0 border-0 text-center py-5 px-3">
-                <div>
-                  <i className="fa-solid fa-computer"></i>
-                </div>
-                <h5 className="text-uppercase mt-4 mb-3">Labs Facilities</h5>
-                <p>
-                  We Provide the Computer lab, 3D lab, Physics, Chemistry,
-                  Biology and General Science and specially Artificial
-                  intelligence lab.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <!--Card end--> */}
 
 
       {/* <!--4th Categories--> */}
@@ -185,7 +112,7 @@ const Home = () => {
   <div className="Exams">
     <h3>Top Categories</h3>
     <div className="row mt-4">
-      <div className="col-lg-3 col-6 mb-4 Exam">
+      <div className="cp col-lg-3 mb-4 Exam">
         <a href="/personalvideoview">
           <img
             style={{ width: "auto", height: "3rem" }}
@@ -211,7 +138,7 @@ const Home = () => {
           <p>Classical Dance</p>
         </a>
       </div>
-      <div className="col-lg-3 col-6 mb-4 Exam">
+      <div className="cp col-lg-3 col-6 mb-4 Exam">
         <a href="/itview">
           <img
             style={{ width: "auto", height: "3rem" }}
@@ -253,7 +180,7 @@ const Home = () => {
           <p>Yoga</p>
         </a>
       </div>
-      <div className="col-lg-3 col-6 mb-4 Exam">
+      <div className="cp col-lg-3 col-6 mb-4 Exam">
         <a href="/religiousview">
           <img
             style={{ width: "auto", height: "3rem" }}
@@ -279,7 +206,7 @@ const Home = () => {
           <p>Communication Skills</p>
         </a>
       </div>
-      <div className="col-lg-3 col-6 mb-4 Exam">
+      <div className="cp col-lg-3 col-6 mb-4 Exam">
         <a href="/musicview">
           <img
             style={{ width: "auto", height: "3rem" }}
@@ -295,10 +222,84 @@ const Home = () => {
     </div>
   </div>
 </div>
+      
+      {/* <!--3rd Section cards--> */}
+
+      <section id="services" className="services_wrapper">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12 text-center mb-2">
+              <h2>SERVICES OFFERS</h2>
+              <p>
+                We specialize in Educational services tailored to meet your
+                digital needs and <br className="d-none d-lg-block" /> Our team
+                excels .
+              </p>
+            </div>
+            <div className="col-lg-3 col-sm-6 mb-4">
+              <div className="card  border-0 text-center py-5 px-3">
+                <div>
+                  <i className="fa-solid fa-bus"></i>
+                </div>
+                <h5 className="text-uppercase mt-4 mb-3">Transport</h5>
+                <p>
+                  The academy has Provide Transport Facility with GPS live
+                  Location tracking and it have the Advance Mobile Notification
+                  at.{" "}
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-sm-6 mb-4">
+              <div className="card  border-0 text-center py-5 px-3">
+                <div>
+                  <i className="fa-solid fa-bed"></i>
+                </div>
+                <h5 className="text-uppercase mt-4 mb-3">Hostel Facilities</h5>
+                <p>
+                  here are 110 rooms in hostel that can provide hostel facility
+                  to the 350 boy’s & 200 girl’s ,Girl’s & boy’s hostel are
+                  separated.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-sm-6 mb-4">
+              <div className="card  border-0 text-center py-5 px-3">
+                <div>
+                  <i className="fa-solid fa-utensils"></i>
+                </div>
+                <h5 className="text-uppercase mt-4 mb-3">Canteen & meals</h5>
+                <p>
+                  Under the care and supervision of the administrator & food in
+                  charge proper functioning of the dining hall of very high
+                  standards.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-sm-6 mb-4">
+              <div className="card  border-0 text-center py-5 px-3">
+                <div>
+                  <i className="fa-solid fa-computer"></i>
+                </div>
+                <h5 className="text-uppercase mt-4 mb-3">Labs Facilities</h5>
+                <p>
+                  We Provide the Computer lab, 3D lab, Physics, Chemistry,
+                  Biology and General Science and specially Artificial
+                  intelligence lab.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <!--Card end--> */}
+
 
 <section className="Events mb-5">
       <div className="container">
-        <h3 className="mb-5">Popular Events</h3>
+        <h2 className="mb-5">Popular Events</h2>
         <div className="row">
           <div className="col-sm-4 col-4 py-3 py-sm-0">
             <div className="card box-shadow">

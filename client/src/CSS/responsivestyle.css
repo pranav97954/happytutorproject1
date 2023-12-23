@@ -47,7 +47,8 @@
 
     .header_wrapper .menu-navbar-nav{
         text-align: center;
-        background-color: var(--bg-white);
+        /* background-color: var(--bg-white); */
+        background-color: blue;
         padding-bottom: 0.9375;
         
 
