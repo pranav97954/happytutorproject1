@@ -263,48 +263,6 @@ p{
 
 
 
-/*Footer*/
-.footer .container{
-    border-bottom: 1px solid black;
-    
-  
-  }
-  
-  .footer .copyright{
-    font-weight: 500;
-    padding: 1rem;
-    margin: 1rem;
-    
-    
-  }
-  
-  .footer .copyright p{
-    color: #707070;
-    font-weight: 600;
-  }
-
-  .footer_contact .row{
-    margin-left: 2.5rem;
-  }
-  .footer_contact .row a{
-   color: var(--text-gray);
-   font-size: 1rem;
-   line-height: 2.5rem;
-   font-weight: 500;
-   cursor: pointer;
-   transition: all .4s ease-in-out;
-   --webkit-transition:all .4s ease-in-out;
-  }
-
-  .footer_contact1 .row a{
-    color: var(--text-gray);
-    font-size: 1rem;
-    line-height: 2.5rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all .4s ease-in-out;
-    --webkit-transition:all .4s ease-in-out;
-   }
 
 
    /*3rd section cards*/
@@ -356,27 +314,7 @@ p{
     
   }
 
-  /*EVENTS*/
-  .Events .row .card{
-    transition: all 0.3s;
-    
-  }
-
-
-  .Events .row .card:hover{
-    transform:scale(1.1);
-
-  }
-
-  .Events .row .card img{
-    border-radius: 20px 20px 20px 20px;
-  }
-
-  .box-shadow{
-    width: 17rem;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
-  }
-
+  
 /* 6th Forms */
 
 .form form{
