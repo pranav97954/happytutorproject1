@@ -1,9 +1,13 @@
 import logo from '../images/Aakash.png';
 import '../CSS/style.css';
 import '../CSS/responsivestyle.css'
+import sun from '../images/sun.png';
 
 const Header = () => {
   
+  const toggleDarkMode = () => {
+    document.body.classList.toggle("dark-theme");
+  };
 
   return (
     <header className="header_wrapper">
@@ -55,7 +59,11 @@ const Header = () => {
                   Sign In
                 </a>
               </li>
-
+              <li className="nav-item">
+                <a className="nav-link" onClick={toggleDarkMode}>
+                  <img src={sun} alt="d-n" id='icon' />
+                </a>
+              </li>
             </ul>
              <form className="d-flex">
               <input

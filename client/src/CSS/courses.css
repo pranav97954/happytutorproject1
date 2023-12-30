@@ -6,8 +6,23 @@
 a{
     text-decoration: none !important;
 }
-
-
+.Tutors_near .container h3{
+    text-align: center;
+}
+.Tutors_near .container .card-body a{
+    text-align: center;
+    
+}
+.Tutors_near .container .card-body a p{
+    color: black;
+}
+.Tutors_near .container .card img{
+    height: 200px;
+}
+.Tutors_near .container .card-body{
+    margin-top: -20px;
+    height: 130px;
+}
 /*Form*/
 .search-container {
     display: flex;
@@ -97,4 +112,30 @@ a{
     filter: brightness(0);
     opacity: 50%;
     
+}
+
+.container .Exams .row .fl1{
+   background-color: #3b436c;
+   margin: 10px;
+   width: 300px;
+   height: 120px;
+}
+.container .Exams .row .fl1 p{
+    color: white;
+    cursor: pointer;
+    font-size: large;
+}
+.container .Exams .row .fl2{
+    background-color: white;
+    width: 300px;
+    margin-top: 10px;
+    height: 120px;
+ }
+ .container .Exams .row .fl2 p{
+     color: black;
+     cursor: pointer;
+     font-size: large;
+ }
+ .container .Exams .row .Exam:hover{
+    transform: scale(1.2);
 }

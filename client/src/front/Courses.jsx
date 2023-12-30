@@ -1,14 +1,10 @@
 import '../CSS/style.css';
 import '../CSS/responsivestyle.css'
- import "../CSS/courses.css";
-import card1 from '../images/courses/card1.jpg'
+import "../CSS/courses.css";
+
+
 import card2 from '../images/courses/card2.jpg'
-import card3 from '../images/courses/card3.jpg'
-import card4 from '../images/courses/card4.jpg'
-import card5 from '../images/courses/card5.jpg'
-import card6 from '../images/courses/card6.jpg'
-import card7 from '../images/courses/card7.jpg'
-import card8 from '../images/courses/card8.jpg'
+
 import card9 from '../images/courses/card9.jpg'
 import card10 from '../images/courses/card10.jpg'
 import card11 from '../images/courses/card11.jpg'
@@ -28,6 +24,23 @@ import part3 from '../images/partners/part3.png'
 import part4 from '../images/partners/part4.png'
 
 import instructor from '../images/courses/instructor-2x-v3.jpg'
+
+import hindi from '../images/courses/hindi.png'
+import sanskrit from '../images/courses/sanskrit.png'
+import marathi from '../images/courses/marathi.png'
+import telugu from '../images/courses/telugu.png'
+import bengali from '../images/courses/bengali.png'
+import kashmiri from '../images/courses/kashmiri.png'
+import punjabi from '../images/courses/punjabi.png'
+import gujarati from '../images/courses/gujarati.png'
+import english from '../images/courses/english.png'
+import geometry  from '../images/courses/geometry.png'
+import coding from '../images/courses/coding.png'
+import science from '../images/courses/science.png'
+import reasoning from '../images/courses/reasioning.png'
+import drawing from '../images/courses/drawing.png'
+import reading from '../images/courses/reading.png'
+import history from '../images/courses/history.png'
 
 const Courses = () => {
   
@@ -54,6 +67,347 @@ const Courses = () => {
         </div>
       </section>
 
+
+      {/* Language Categories */}
+      <section className="Tutors_near mb-5">
+        <div className="container">
+          <h3 className="mb-5">Language Categories</h3>
+          <div className="row mb-5">
+            <div className="col-lg-2 col-md-2 col-6">
+              <div className="card shadow" style={{ width: "15rem" }}>
+                <a href="/book">
+                  <img
+                    src={hindi}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </a>
+                <div className="card-body">
+                  <a href="/book">
+                    <p className="card-text mb-3">Hindi</p>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                      4.8<i className="fa-solid fa-star"></i>(1.3k Reviews)
+                    </h6>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                      Register now
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-2 col-md-2 col-6">
+              <div className="card shadow" style={{ width: "15rem" }}>
+                <a href="/book">
+                  <img
+                    src={sanskrit}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </a>
+                <div className="card-body">
+                  <a href="/book">
+                    <p className="card-text mb-3">Sanskrit</p>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                      4.1<i className="fa-solid fa-star"></i>(2.2k Reviews)
+                    </h6>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                      Register now
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-2 col-md-2 col-6">
+              <div className="card shadow" style={{ width: "15rem" }}>
+                <a href="/book">
+                  <img
+                    src={marathi}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </a>
+                <div className="card-body">
+                  <a href="/book">
+                    <p className="card-text mb-3">Marathi</p>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                      4.2<i className="fa-solid fa-star"></i>(4.3k Reviews)
+                    </h6>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                    Register now
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-2 col-md-2 col-6">
+              <div className="card shadow" style={{ width: "15rem" }}>
+                <a href="/book">
+                  <img
+                    src={telugu}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </a>
+                <div className="card-body">
+                  <a href="/book">
+                    <p className="card-text mb-3">Telugu</p>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                      3.4<i className="fa-solid fa-star"></i>(1.1k Reviews)
+                    </h6>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                    Register now
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* other cards */}
+          <div className="row mb-5">
+            <div className="col-lg-2 col-md-2 col-6">
+              <div className="card shadow" style={{ width: "15rem" }}>
+                <a href="/book">
+                  <img
+                    src={bengali}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </a>
+                <div className="card-body">
+                  <a href="/book">
+                    <p className="card-text mb-3">Bengali</p>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                      4.8<i className="fa-solid fa-star"></i>(1.3k Reviews)
+                    </h6>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                    Register now
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-2 col-md-2 col-6">
+              <div className="card shadow" style={{ width: "15rem" }}>
+                <a href="/book">
+                  <img
+                    src={gujarati}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </a>
+                <div className="card-body">
+                <a href="/book">
+                    <p className="card-text mb-3">Gujarati</p>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                      4.5<i className="fa-solid fa-star"></i>(1.3k Reviews)
+                    </h6>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                    Register now
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-2 col-md-2 col-6">
+              <div className="card shadow" style={{ width: "15rem" }}>
+                <a href="/book">
+                  <img
+                    src={kashmiri}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </a>
+                <div className="card-body">
+                  <a href="/book">
+                    <p className="card-text mb-3">Kashmiri</p>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                      4.7<i className="fa-solid fa-star"></i>(1.2k Reviews)
+                    </h6>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                    Register now
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-2 col-md-2 col-6">
+              <div className="card shadow" style={{ width: "15rem" }}>
+                <a href="/book">
+                  <img
+                    src={punjabi}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </a>
+                <div className="card-body">
+                  <a href="/book">
+                    <p className="card-text mb-3">Punjabi</p>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                      4.0<i className="fa-solid fa-star"></i>(4.3k Reviews)
+                    </h6>
+                  </a>
+                  <a href="/book">
+                    <h6>
+                    Register now
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Foreign Language */}
+      <div className="container mb-5">
+        <div className="Exams">
+          <h3>Foreign Language</h3>
+          <div className="row mt-4">
+            <div className="fl1 col-lg-3 mb-4 Exam">
+              <p>Russian</p>
+              <a href="/personalvideoview">
+              </a>
+              <a href="#" className='linkregister'>
+                <p>Register now</p>
+              </a>
+            </div>
+            <div className="fl2 col-lg-3 col-6 mb-4 Exam">
+              <a href="/classical">
+                <p>Japanese</p>
+              </a>
+              <a href="#" className='linkregister'>
+                <p>Register now</p>
+              </a>
+            </div>
+            <div className="fl1 col-lg-3 col-6 mb-4 Exam">
+             
+              <a href="/itview">
+                <p>Korean</p>
+              </a>
+              <a href="#" className='linkregister'>
+                <p>Register now</p>
+              </a>
+            </div>
+            <div className="fl2 col-lg-3 col-6 mb-4 Exam"> 
+              <a href="/mathvideoview">
+                <p>Martian</p>
+              </a>
+              <a href="#" className='linkregister'>
+                <p>Register now</p>
+              </a>
+            </div>
+          </div>
+
+          <div className="row mt-4">
+            <div className="fl2 col-lg-3 col-6 mb-4 Exam">
+                <p>Chinese</p>
+              <a href="#" className='linkregister'>
+                <p>Register now</p>
+              </a>
+            </div>
+            <div className="fl1 col-lg-3 col-6 mb-4 Exam">
+              
+              <a href="/religiousview">
+                <p>French</p>
+              </a>
+              <a href="#" className='linkregister'>
+                <p>Register now</p>
+              </a>
+            </div>
+            <div className="fl2 col-lg-3 col-6 mb-4 Exam">
+             
+              <a href="/englishvideoview">
+                <p>Spanish</p>
+              </a>
+              <a href="#" className='linkregister'>
+                <p>Register now</p>
+              </a>s
+            </div>
+            <div className="fl1 col-lg-3 col-6 mb-4 Exam">
+              <a href="/musicview">
+                <p>Latin</p>
+              </a>
+              <a href="#" className='linkregister'>
+                <p>Register now</p>
+              </a>
+            </div>
+          </div>
+
+          <div className="row mt-4">
+            <div className="fl1 col-lg-3 mb-4 Exam">
+              <p>Greek</p>
+              <a href="#" className='linkregister'>
+                <p>Register now</p>
+              </a>
+            </div>
+            <div className="fl2 col-lg-3 col-6 mb-4 Exam">
+              <a href="/classical">
+                <p>American accent</p>
+              </a>
+              <a href="#" className='linkregister'>
+                <p>Register now</p>
+              </a>
+            </div>
+            <div className="fl1 col-lg-3 col-6 mb-4 Exam">
+             
+              <a href="/itview">
+                <p>British accent</p>
+              </a>
+              <a href="#" className='linkregister'>
+                <p>Register now</p>
+              </a>
+            </div>
+            <div className="fl2 col-lg-3 col-6 mb-4 Exam"> 
+              <a href="/mathvideoview">
+                <p>Nepali</p>
+              </a>
+              <a href="#" className='linkregister'>
+                <p>Register now</p>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
       {/* 3rd section Tutors near */}
       <section className="Tutors_near mb-5">
         <div className="container">
@@ -63,7 +417,7 @@ const Courses = () => {
               <div className="card shadow" style={{ width: "15rem" }}>
                 <a href="/book">
                   <img
-                    src={card1}
+                    src={english}
                     className="card-img-top"
                     alt="..."
                   />
@@ -117,14 +471,14 @@ const Courses = () => {
               <div className="card shadow" style={{ width: "15rem" }}>
                 <a href="/book">
                   <img
-                    src={card3}
+                    src={geometry}
                     className="card-img-top"
                     alt="..."
                   />
                 </a>
                 <div className="card-body">
                   <a href="/book">
-                    <p className="card-text mb-3">Math Tutors</p>
+                    <p className="card-text mb-3">Geometry</p>
                   </a>
                   <a href="/book">
                     <h6>
@@ -144,7 +498,7 @@ const Courses = () => {
               <div className="card shadow" style={{ width: "15rem" }}>
                 <a href="/book">
                   <img
-                    src={card4}
+                    src={coding}
                     className="card-img-top"
                     alt="..."
                   />
@@ -174,7 +528,7 @@ const Courses = () => {
               <div className="card shadow" style={{ width: "15rem" }}>
                 <a href="/book">
                   <img
-                    src={card5}
+                    src={reading}
                     className="card-img-top"
                     alt="..."
                   />
@@ -201,7 +555,7 @@ const Courses = () => {
               <div className="card shadow" style={{ width: "15rem" }}>
                 <a href="/book">
                   <img
-                    src={card6}
+                    src={science}
                     className="card-img-top"
                     alt="..."
                   />
@@ -226,7 +580,7 @@ const Courses = () => {
               <div className="card shadow" style={{ width: "15rem" }}>
                 <a href="/book">
                   <img
-                    src={card7}
+                    src={reasoning}
                     className="card-img-top"
                     alt="..."
                   />
@@ -253,7 +607,7 @@ const Courses = () => {
               <div className="card shadow" style={{ width: "15rem" }}>
                 <a href="/book">
                   <img
-                    src={card8}
+                    src={drawing}
                     className="card-img-top"
                     alt="..."
                   />
@@ -282,20 +636,20 @@ const Courses = () => {
       {/* 4th section Tutoring service */}
       <section className="Tutors_near mb-5">
         <div className="container">
-          <h3 className="mb-5">Calculus Tutors</h3>
+          <h3 className="mb-5">Subjective Section for Classes 5th-12th</h3>
           <div className="row mb-5">
             <div className="col-lg-2 col-md-2 col-6">
               <div className="card shadow" style={{ width: "15rem" }}>
                 <a href="/book">
                   <img
-                    src={card16}
+                    src={history}
                     className="card-img-top"
                     alt="..."
                   />
                 </a>
                 <div className="card-body">
                   <a href="/book">
-                    <p className="card-text mb-3">Geometry Tutors</p>
+                    <p className="card-text mb-3">History</p>
                   </a>
                   <a href="/book">
                     <h6>
@@ -322,7 +676,7 @@ const Courses = () => {
                 </a>
                 <div className="card-body">
                   <a href="/book">
-                    <p className="card-text mb-3">English Tutors</p>
+                    <p className="card-text mb-3">Geography</p>
                   </a>
                   <a href="/book">
                     <h6>
@@ -349,7 +703,7 @@ const Courses = () => {
                 </a>
                 <div className="card-body">
                   <a href="/book">
-                    <p className="card-text mb-3">Spanish Tutors</p>
+                    <p className="card-text mb-3">Social Studies</p>
                   </a>
                   <a href="/book">
                     <h6>
@@ -376,7 +730,7 @@ const Courses = () => {
                 </a>
                 <div className="card-body">
                   <a href="/book">
-                    <p className="card-text mb-3">Writing Tutors</p>
+                    <p className="card-text mb-3">Maths</p>
                   </a>
                   <a href="/book">
                     <h6>
@@ -408,7 +762,7 @@ const Courses = () => {
                 </a>
                 <div className="card-body">
                   <a href="/book">
-                    <p className="card-text mb-3">Spelling Tutors</p>
+                    <p className="card-text mb-3">Physics</p>
                   </a>
                   <a href="/book">
                     <h6>
@@ -434,7 +788,7 @@ const Courses = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <p className="card-text mb-3">Statistics Tutors</p>
+                  <p className="card-text mb-3">Chemistry</p>
                   <a href="/book">
                     <h6>
                       4.5<i className="fa-solid fa-star"></i>(1.3k Reviews)
@@ -460,7 +814,7 @@ const Courses = () => {
                 </a>
                 <div className="card-body">
                   <a href="/book">
-                    <p className="card-text mb-3">Biology Tutors</p>
+                    <p className="card-text mb-3">Biology</p>
                   </a>
                   <a href="/book">
                     <h6>
@@ -487,7 +841,7 @@ const Courses = () => {
                 </a>
                 <div className="card-body">
                   <a href="/book">
-                    <p className="card-text mb-3">Geometry Tutors</p>
+                    <p className="card-text mb-3">Algebra</p>
                   </a>
                   <a href="/book">
                     <h6>
@@ -505,6 +859,18 @@ const Courses = () => {
           </div>
         </div>
       </section>
+      {/* Training and live project */}
+      <section className="Training">
+         <div className="live">
+          <h2>Training and live project </h2>
+          <p>Practical industry-oriented projects in the training and live project section for hands-on experience. Additionally, provide personalized mentorship opportunities for students to ensure a holistic learning experience.</p>
+          <h4>Enroll now for Courses</h4>
+          <button>Enroll Now</button>
+          <h4>Register Now for Training and live project</h4>
+          <button>Register Now</button>
+         </div>
+      </section>
+
 
       {/* info */}
       <section className="info mb-5 p-2">
@@ -608,7 +974,10 @@ const Courses = () => {
           </div>
         </div>
       </section>
+      
 
+      
+      
       {/* instructor */}
       <section className="inst mb-5">
         <div className="container">

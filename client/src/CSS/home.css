@@ -1,13 +1,34 @@
+body{
+    font-family: var(--secondary-font);
+    width: 100%;
+    background-repeat: no-repeat;
+    /* Light Theme */
+    background-color: #ffffff;
+    color: #000000;
+    --primary-color:white;
+    --secondary-color: #212121;
+}
+
+
+  /* Dark Theme */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+    /* Add other dark theme styles as needed */
+    --primary-color:black;
+    --secondary-color: white;
+}
 .services_wrapper{
     margin-top: -55px;
     /* background-color: black; */
-    background-color: rgb(104, 107, 255);
-    color: white;
+    background-color: black;
+    color: var(--primary-color);
     padding-bottom: 50px;
 }
+
 .services_wrapper h2{
     padding-top: 30px;
-    color: white;
+    color: var(--primary-color);
 }
 .services_wrapper p{
     padding-top: 10px;
@@ -49,7 +70,7 @@
 }
 .Events h2{
     text-align: center;
-    color: black;
+    color: var(--secondary-color);
     padding-top: 50px;
 }
 
@@ -72,3 +93,87 @@
     box-shadow: 0px 5px 30px black;
 }
 
+.Events .container .row .card .ig{
+    height: 200px;
+    margin-bottom: 0px;
+}
+.Events .container .row .card .it{
+    margin-top: -100px;
+    text-align: center;
+}
+.Events .container .row .card .it h5{
+    font-size: xx-large;
+    font-weight: 800;
+    color: white;
+}
+.Events .container .row .card .it button{
+    margin-bottom: -50px;
+    text-align: center;
+}
+.Events .container .row .card .it .tttt{
+    margin-top: -50px;
+}
+
+.Training .live{
+    align-items: center;
+    text-align: center;
+    border: 3px solid white;
+    margin-bottom: 30px;
+}
+
+.conslider{
+    height: 500px;
+}
+.slidercontent{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    max-width: 700px;
+}
+.slidercontent h3{
+    font-size: 45px;
+    margin-top: 70px;
+    color: var(--secondary-color);
+    animation-delay: 0.1s;
+}
+.slidercontent p{
+    margin:  20px 0 20px;
+    font-size: 18px;
+    color: var(--secondary-color);
+    animation-delay: 0.6s;
+}
+.slidercontent button{
+    margin-top: 10px;
+    padding: 15px 80px;
+    font-size: 16px;
+    border-top-right-radius: 0px;
+    transition: 0.5s;
+    animation-delay: 1.5s;
+}
+.slidercontent button:hover{
+    border-top-right-radius: 30px;
+}
+
+.featureimg{
+    width: 530px;
+    position: absolute;
+    margin-top: 120px;
+    height: 470px;
+    top: 0;
+    right: 15%;
+    
+}
+.featureimg .anim{
+    animation-delay: 1.5s;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

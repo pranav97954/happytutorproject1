@@ -20,10 +20,40 @@ import diwali from "../images/events/diwali.jpg";
 import tour from "../images/events/tour.jpg";
 import debate from "../images/events/debate.jpg";
 
+import digital from '../images/home/digital.png'
+import ethical from '../images/home/ethical.png'
+import webdevlopment from '../images/home/webdevlopment.png'
+import graphic from '../images/home/graphic.png'
+import aiml from '../images/home/aiml.png'
+import seo from '../images/home/seo.png'
+import cybersecurity from '../images/home/cybersecurity.png'
+import datascience from '../images/home/datascience.png';
+import blockchain from '../images/home/blockchain.png';
+import career from '../images/home/career.png';
+
+import aiimage from '../images/home/aiimage.png'
+import affiliate from '../images/home/affiliate.png'
+import digitalart from '../images/home/digitalart.png'
+import lead from '../images/home/lead.png'
+import youtube from '../images/home/youtube.png'
+import blogging from '../images/home/blogging.png'
+
 const Home = () => {
   return (
     <div>
-      <div
+      <div className="container ">
+        <div className="conslider">
+          <div className="slidercontent">
+            <h3 className="anim">Your Career,<br /> Our Everlasting Commitment to Your Growth</h3>
+            <p className="anim">Explore a world of learning at our educational hub, where we offer a diverse range of courses coupled with hands-on live project training. Our commitment extends beyond education as we provide dedicated support to ensure your successful placement in the professional landscape. Join us on the journey to shape your career with expertise and guidance.</p>
+            <button className="anim">Join Now</button>
+          </div>
+          <img src={career} className="featureimg anim" />
+        </div>
+      </div>
+
+      {/* Slider */}
+      {/* <div
         id="carouselExampleIndicators"
         className="carousel slide mb-5"
         data-bs-ride="carousel"
@@ -94,7 +124,7 @@ const Home = () => {
           ></span>
           <span className="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> */}
 
       {/* <!--4th Categories--> */}
       <div className="container mb-5">
@@ -283,8 +313,342 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* <!--Card end--> */}
 
+      {/* Extra Activities */}
+      <section className="Events mb-5">
+        <div className="container">
+          <h2 className="mb-5">Extra Activities</h2>
+          <div className="row">
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={digital}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="card-title">Digital Marketing</h5>
+                  <a href="/register">
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={ethical}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="card-title">Ethical Hacking</h5>
+                 
+                  <a href="/register">
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={webdevlopment}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="card-title">Web Development</h5>
+                 
+                  <a href="/register">
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Other Cards */}
+          <div className="row mt-5">
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={graphic}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="card-title">Graphic Design</h5>
+                  <a href="/register">
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={aiml}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="card-title">AI & ML</h5>
+                  
+                  <a href="/register">
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={seo}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="card-title">SEO Settings</h5>
+                 
+                  <a href="/register">
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row mt-5">
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={cybersecurity}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="card-title">Cybersecurity</h5>
+                  <a href="/register">
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={datascience}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="card-title">Data Science</h5>
+                  
+                  <a href="/register">
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={blockchain}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="card-title">Blockchain</h5>
+                 
+                  <a href="/register">
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* On-Demand Skills */}
+      <section className="Events mb-5">
+        <div className="container">
+          <h2 className="mb-5">On-Demand Skills</h2>
+          <div className="row">
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={affiliate}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="card-title">Affiliate market..</h5>
+                  <a href="/register">
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={lead}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="card-title">Lead Generation</h5>
+                 
+                  <a href="/register">
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={digitalart}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="card-title">Digital Art</h5>
+                 
+                  <a href="/register">
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Other Cards */}
+          <div className="row mt-5">
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={aiimage}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="card-title">Ai-image Creation</h5>
+                  <a href="/register">
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={blogging}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="card-title">Blogging</h5>
+                  
+                  <a href="/register">
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-4 col-4 py-3 py-sm-0">
+              <div className="card box-shadow">
+                <a href="/register">
+                  <img
+                    src={youtube}
+                    className="ig card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div className="it card-body">
+                  <h5 className="tttt card-title">YouTube video-creation</h5>
+                 
+                  <a href="/register" >
+                    <button type="button" className="btn btn-success">
+                      Register Now
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <!--Card end--> */}
       <section className="Events mb-5">
         <div className="container">
           <h2 className="mb-5">Popular Events</h2>

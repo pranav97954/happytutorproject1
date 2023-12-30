@@ -104,6 +104,18 @@ app.post('/cttfm', (req, res) => {
     });
 });
 
+app.post('/subjectfm', (req, res) => {
+  SubjectModel.create({ fname, lname ,email,subject ,contact})
+    .then((contactform) => {
+      console.log('we will contact you shortly', contactform);
+      res.json({ message: 'Subject registration successful' });
+    })
+    .catch((err) => {
+      console.error('Error creating user:', err);
+      res.status(500).json({ error: 'Internal server error' });
+    });
+});
+
 
 
 
@@ -397,6 +409,7 @@ app.post('/post-reply/:queryId', async (req, res) => {
 //logout
 const session = require('express-session');
 const ContactModel = require("./models/Contact");
+const SubjectModel = require("./models/Subject");
 
 app.use(
   session({
