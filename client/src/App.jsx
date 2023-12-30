@@ -34,6 +34,7 @@ import MusicView from './view/MusicView';
 import Careers from './front/Careers';
 import ContactForm from './front/ContactForm';
 import Register from './front/Register';
+import Form from './front/Form';
 //import Navbar from './front/Navbar';
 
 //import LoginComponent from './front/LoginComponent';
@@ -80,6 +81,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/courses' element={<Courses />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/trainingform' element={<Form />} />
         </Routes>
       </BrowserRouter>
       {showHeaderFooter() && <Footer />}

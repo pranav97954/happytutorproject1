@@ -116,6 +116,17 @@ app.post('/subjectfm', (req, res) => {
     });
 });
 
+app.post('/trainingfm', (req, res) => {
+  TrainingModel.create({ fname, lname ,email,project,duration,contact})
+    .then((contactform) => {
+      console.log('we will contact you shortly', contactform);
+      res.json({ message: 'Training registration successful' });
+    })
+    .catch((err) => {
+      console.error('Error creating user:', err);
+      res.status(500).json({ error: 'Internal server error' });
+    });
+});
 
 
 
@@ -410,6 +421,7 @@ app.post('/post-reply/:queryId', async (req, res) => {
 const session = require('express-session');
 const ContactModel = require("./models/Contact");
 const SubjectModel = require("./models/Subject");
+const TrainingModel = require("./models/Training");
 
 app.use(
   session({

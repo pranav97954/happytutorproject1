@@ -865,9 +865,12 @@ const Courses = () => {
           <h2>Training and live project </h2>
           <p>Practical industry-oriented projects in the training and live project section for hands-on experience. Additionally, provide personalized mentorship opportunities for students to ensure a holistic learning experience.</p>
           <h4>Enroll now for Courses</h4>
-          <button>Enroll Now</button>
+          <a href="/register">
+            <button>Enroll Now</button>
+          </a>
           <h4>Register Now for Training and live project</h4>
-          <button>Register Now</button>
+          <a href="/trainingform"><button>Register Now</button> </a>
+          
          </div>
       </section>
 
