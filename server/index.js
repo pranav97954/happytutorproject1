@@ -24,7 +24,7 @@ const sessionSecret = process.env.SESSION_SECRET || 'a38ebe1628cf6092be0ba8aa8e1
 // Update MongoDB connection URI
 const MONGODB_URI = 'mongodb+srv://pranavkumar97954:zlVxT7INPRW8Sjbi@cluster0.gi6fh6q.mongodb.net/akash?retryWrites=true&w=majority';
 
-mongoose.connect(MONGODB_URI, {
+mongoose.connect(process.env.MONGODB_URI || MONGODB_URI, {
   //useNewUrlParser: true,
   //useUnifiedTopology: true,
   

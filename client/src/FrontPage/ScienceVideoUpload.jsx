@@ -1,0 +1,39 @@
+// VideoUpload.jsx
+import React, { useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
+const ScienceVideoUpload = () => {
+  const [selectedFile, setSelectedFile] = useState(null);
+  const navigate = useNavigate(); 
+
+  const handleFileChange = (e) => {
+    setSelectedFile(e.target.files[0]);
+  };
+
+  const handleUpload = () => {
+    const formData = new FormData();
+    formData.append('folderName', "science");
+    formData.append('video', selectedFile);
+
+    axios.post('https://aakashacademy.in/science-upload-video', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    })
+    .then(response => {
+      //console.log(response.data); // Handle success, e.g., show a success message
+      navigate('/upload',{ message: 'Upload successful!' });
+    });
+  };
+
+  return (
+    <div>
+      <h2>Science</h2>
+      <input type="file" accept="video/*" onChange={handleFileChange} />
+      <button onClick={handleUpload}>Upload Video</button>
+    </div>
+  );
+};
+
+export default ScienceVideoUpload;
